@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euan Mutch | New Mindset New Power | Personal Trainer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Euan Mutch, CIMSPA Personal Trainer Practitioner, Founder of New Mindset New Power. Specialising in recovery through fitness, menopause support, mental health, and community coaching in Livingston, Scotland.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0A2540;
+            --secondary: #00C2A8;
+            --accent: #FF6B35;
+            --dark: #0D1B2A;
+            --light: #F8F9FA;
+            --text: #1A1A1A;
+            --muted: #6C757D;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; background: var(--light); }
+        h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 0.5px; }
+        a { color: var(--secondary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--dark); color: white; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 700; color: white; }
+        .logo span { color: var(--secondary); }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav ul a { color: white; font-weight: 500; }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, #123456 100%); color: white; padding: 100px 0; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('images/design-578f2591-c7bf-4bca-bbd3-ad3bd20f9ad8.png') center/cover no-repeat; opacity: 0.15; }
+        .hero-content { position: relative; z-index: 1; }
+        .hero h1 { font-size: 4rem; margin-bottom: 10px; }
+        .hero .tagline { font-size: 1.5rem; color: var(--secondary); margin-bottom: 20px; font-weight: 500; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+        .btn { display: inline-block; background: var(--secondary); color: var(--dark); padding: 14px 32px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; }
+        .btn:hover { background: #00a892; transform: translateY(-2px); text-decoration: none; }
+        .btn-outline { background: transparent; border: 2px solid white; color: white; margin-left: 15px; }
+        .btn-outline:hover { background: white; color: var(--dark); }
+        section { padding: 80px 0; }
+        section h2 { font-size: 2.8rem; text-align: center; margin-bottom: 15px; color: var(--primary); }
+        section .subtitle { text-align: center; color: var(--muted); margin-bottom: 50px; font-size: 1.1rem; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-text h3 { font-size: 2rem; margin-bottom: 20px; color: var(--primary); }
+        .about-text p { margin-bottom: 15px; }
+        .highlight { background: var(--secondary); color: var(--dark); padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+        .qual-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .qual-card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .qual-card:hover { transform: translateY(-5px); }
+        .qual-card h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.3rem; }
+        .qual-card .date { color: var(--secondary); font-weight: 600; font-size: 0.9rem; }
+        .qual-card p { color: var(--muted); font-size: 0.95rem; margin-top: 10px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background: white; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .service-card h3 { color: var(--primary); margin: 15px 0; }
+        .icon { font-size: 2.5rem; color: var(--secondary); }
+        .resources { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; }
+        .resource-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .resource-card img { width: 100%; height: auto; display: block; }
+        .resource-card h4 { padding: 20px; color: var(--primary); }
+        .contact { background: var(--primary); color: white; }
+        .contact h2 { color: white; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .contact a { color: var(--secondary); }
+        footer { background: var(--dark); color: white; text-align: center; padding: 30px 0; }
+        @media (max-width: 768px) {
+            .about-grid, .contact-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            nav ul { display: none; }
+            .btn-outline { margin-left: 0; margin-top: 15px; display: block; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">New Mindset <span>New Power</span></div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Euan Mutch</h1>
+            <div class="tagline">Reset • Rebuild • Rise</div>
+            <p>CIMSPA Personal Trainer Practitioner | FitPro Professional Member | Founder of New Mindset New Power<br>
+            Specialising in Recovery Through Fitness, Menopause Support, Mental Health & Community Coaching</p>
+            <a href="#contact" class="btn">Book a Session</a>
+            <a href="https://linktr.ee/euanmutchnmnp" class="btn btn-outline" target="_blank">Linktree</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>My Story</h2>
+            <p class="subtitle">From rock bottom to building a movement that changes lives</p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Lived Experience. Professional Expertise.</h3>
+                    <p>I grew up in the care system, navigating instability, addiction, and depression. For years I felt lost, believing there was no way out. Fitness became my turning point — giving me structure, discipline, and hope.</p>
+                    <p>With the support of my wife, I qualified as a Level 2 Gym Instructor then progressed to Level 3 Personal Trainer. Gaining CIMSPA status and becoming a FitPro Professional Member were milestones I never thought possible.</p>
+                    <p>Today, through <span class="highlight">New Mindset New Power</span>, I help others rebuild confidence, break unhelpful habits, and create sustainable change. My approach combines structured training with mindset work, supportive accountability, and genuine lived experience.</p>
+                    <p><strong>Mission:</strong> Build strong bodies, strong minds, and strong communities — one person at a time.</p>
+                </div>
+                <div>
+                    <p style="font-size: 1.1rem; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                        “I know what it’s like to feel like you’re at rock bottom. Through fitness, education, and community, I rebuilt myself. Now I dedicate my life to helping others do the same. Because no matter how lost you feel, it’s never too late to change your story.”
+                    </p>
+                    <p style="margin-top: 20px; text-align: center; color: var(--muted);">— Euan Mutch, Founder, New Mindset New Power</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualifications" style="background: #f0f4f8;">
+        <div class="container">
+            <h2>Qualifications & CPD</h2>
+            <p class="subtitle">Fully qualified, insured, and committed to ongoing professional development</p>
+            <div class="qual-grid">
+                <div class="qual-card">
+                    <h4>Level 3 Diploma Practitioner in Personal Training (RQF)</h4>
+                    <div class="date">Focus Awards • PureGym Personal Training Academy • July 2025</div>
+                    <p>Core qualification covering anatomy, nutrition, programme design, delivery, and business skills. Certificate Number: RQF109062</p>
+                    <a href="images/116236_PG525_Euan_Mutch.pdf" target="_blank">View Certificate →</a>
+                </div>
+                <div class="qual-card">
+                    <h4>Level 3 Diploma in Exercise Referral</h4>
+                    <div class="date">The Fitness Group • Certificate of Achievement</div>
+                    <p>Specialist training for working with clients referred through medical or health pathways.</p>
+                    <a href="images/2024 The Fitness Group Certificate Euan Mutch.pdf" target="_blank">View Certificate →</a>
+                </div>
+                <div class="qual-card">
+                    <h4>Drug and Alcohol Recovery Fitness Specialist</h4>
+                    <div class="date">FitPro • 16 October 2025 • 6 CIMSPA CPD Points</div>
+                    <p>Specialist training combining lived experience with professional practice to support people in recovery through movement.</p>
+                    <a href="images/23951.pdf" target="_blank">View Certificate →</a>
+                </div>
+                <div class="qual-card">
+                    <h4>Older Adults & Exercise</h4>
+                    <div class="date">FitPro • 22 April 2026 • 3 CIMSPA CPD Points (Endorsed)</div>
+                    <p>Evidence-based approaches for safe, effective training with older adults.</p>
+                    <a href="images/Certificate.pdf" target="_blank">View Certificate →</a>
+                </div>
+                <div class="qual-card">
+                    <h4>Exercise, Brain Health and Cognition</h4>
+                    <div class="date">FitPro • 03 February 2026 • 2 CIMSPA CPD Points</div>
+                    <p>Understanding the powerful links between movement, mental health, and cognitive function.</p>
+                    <a href="images/24380.pdf" target="_blank">View Certificate →</a>
+                </div>
+                <div class="qual-card">
+                    <h4>Instructor Public & Teacher Liability Insurance</h4>
+                    <div class="date">FitPro / Aviva • Aug 2025 – Aug 2026</div>
+                    <p>£2,000,000 cover for Fitness Instructor activities. Fully insured to deliver 1-1 and group sessions.</p>
+                    <a href="images/FP44392861-I-012-20250807161516.pdf" target="_blank">View Policy Schedule →</a>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: var(--muted);">Additional training includes Mental Health Awareness, Life Coaching, Peri/Post-Menopause Exercise & Nutrition, and more.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>How I Can Help</h2>
+            <p class="subtitle">Personalised coaching that combines physical training with mindset and community support</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">💪</div>
+                    <h3>1-1 Personal Training</h3>
+                    <p>Indoors, outdoors, or online. Structured programmes focused on strength, confidence, and sustainable results. Available at Xcite / West Lothian Leisure and privately.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🌅</div>
+                    <h3>Outdoor Bootcamps</h3>
+                    <p>Early morning community sessions in West Lothian. High energy, inclusive, and focused on building both fitness and belonging.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🌸</div>
+                    <h3>Menopause & Women’s Fitness</h3>
+                    <p>Specialist circuits and support for peri- and post-menopause. Strength, mobility, confidence, and community for women navigating hormonal change.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🧠</div>
+                    <h3>Recovery Through Fitness</h3>
+                    <p>Support for people in recovery from alcohol or drug addiction. Safe, adaptable training combined with lived experience and professional knowledge.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🤝</div>
+                    <h3>Men’s Mental Health Groups</h3>
+                    <p>Supportive environments for men to train, talk, and rebuild. Focused on movement as a tool for mental wellbeing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🎯</div>
+                    <h3>Online Coaching & Mindset</h3>
+                    <p>Remote support through My PT Hub. Habit change, accountability, and programming tailored to your life and goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" style="background: #f0f4f8;">
+        <div class="container">
+            <h2>Client Education Resources</h2>
+            <p class="subtitle">Practical guides to support your journey (Precision Nutrition content)</p>
+            <div class="resources">
+                <div class="resource-card">
+                    <img src="images/why-its-so-easy-to-overeat-junk-food-poster.png" alt="Why it's so easy to overeat junk food">
+                    <h4>Why It’s So Easy to Overeat Junk Food — and 7 Ways to Stop</h4>
+                </div>
+                <div class="resource-card">
+                    <img src="images/how-to-stay-in-shape-when-you’re-busy-infographic-poster.png" alt="How to stay in shape when you're busy">
+                    <h4>How to Stay in Shape When You’re Busy — 10-Minute Workouts</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Reset, Rebuild & Rise?</h2>
+            <p class="subtitle" style="color: #ccc;">Based in Livingston, West Lothian, Scotland. Serving clients in-person and online.</p>
+            <div class="contact-grid">
+                <div>
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> <a href="mailto:euanmutchfitness@gmail.com">euanmutchfitness@gmail.com</a></p>
+                    <p><strong>Phone / WhatsApp:</strong> <a href="tel:07543736315">07543 736315</a></p>
+                    <p><strong>Book Sessions:</strong> <a href="https://mutchfitness.mypthub.net" target="_blank">mutchfitness.mypthub.net</a></p>
+                    <p><strong>Linktree:</strong> <a href="https://linktr.ee/euanmutchnmnp" target="_blank">linktr.ee/euanmutchnmnp</a></p>
+                    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/euanmutchnmnp" target="_blank">@euanmutchnmnp</a> / @mutcheuan</p>
+                </div>
+                <div>
+                    <h3>Also Available At</h3>
+                    <p>Xcite / West Lothian Leisure — Personal Training</p>
+                    <p>Outdoor Bootcamps across West Lothian</p>
+                    <p>Online coaching worldwide</p>
+                    <br>
+                    <p><strong>Fully Insured</strong> — £2,000,000 Public & Teacher Liability</p>
+                    <p>CIMSPA Advanced Practitioner • FitPro Professional Member</p>
+                    <a href="#qualifications" class="btn" style="margin-top: 20px;">View Qualifications</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Euan Mutch | New Mindset New Power. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">Build strong bodies, strong minds, and strong communities — one person at a time.</p>
+        </div>
+    </footer>
+</body>
+</html>
