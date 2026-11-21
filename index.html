@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Euan Mutch | New Mindset New Power | Personal Trainer Portfolio</title>
-    <meta name="description" content="Professional portfolio of Euan Mutch, CIMSPA Personal Trainer Practitioner, Founder of New Mindset New Power. Specialising in recovery through fitness, menopause support, mental health, and community coaching in Livingston, Scotland.">
+    <title>Euan Mutch | New Mindset New Power | Award-Winning Personal Trainer</title>
+    <meta name="description" content="Euan Mutch – Founder of New Mindset New Power. Award-winning Personal Trainer specialising in recovery through fitness, menopause coaching, older adults, and community building. Livingston, Scotland.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -30,15 +30,13 @@
         .logo span { color: var(--secondary); }
         nav ul { display: flex; list-style: none; gap: 30px; }
         nav ul a { color: white; font-weight: 500; }
-        .hero { background: linear-gradient(135deg, var(--primary) 0%, #123456 100%); color: white; padding: 100px 0; text-align: center; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('images/design-578f2591-c7bf-4bca-bbd3-ad3bd20f9ad8.png') center/cover no-repeat; opacity: 0.15; }
-        .hero-content { position: relative; z-index: 1; }
-        .hero h1 { font-size: 4rem; margin-bottom: 10px; }
-        .hero .tagline { font-size: 1.5rem; color: var(--secondary); margin-bottom: 20px; font-weight: 500; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
-        .btn { display: inline-block; background: var(--secondary); color: var(--dark); padding: 14px 32px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, #123456 100%); color: white; padding: 120px 0 80px; text-align: center; position: relative; }
+        .hero h1 { font-size: 4.5rem; margin-bottom: 10px; }
+        .hero .tagline { font-size: 1.8rem; color: var(--secondary); margin-bottom: 20px; font-weight: 500; }
+        .hero p { font-size: 1.25rem; max-width: 800px; margin: 0 auto 30px; opacity: 0.95; }
+        .btn { display: inline-block; background: var(--secondary); color: var(--dark); padding: 14px 32px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; margin: 5px; }
         .btn:hover { background: #00a892; transform: translateY(-2px); text-decoration: none; }
-        .btn-outline { background: transparent; border: 2px solid white; color: white; margin-left: 15px; }
+        .btn-outline { background: transparent; border: 2px solid white; color: white; }
         .btn-outline:hover { background: white; color: var(--dark); }
         section { padding: 80px 0; }
         section h2 { font-size: 2.8rem; text-align: center; margin-bottom: 15px; color: var(--primary); }
@@ -47,7 +45,7 @@
         .about-text h3 { font-size: 2rem; margin-bottom: 20px; color: var(--primary); }
         .about-text p { margin-bottom: 15px; }
         .highlight { background: var(--secondary); color: var(--dark); padding: 2px 8px; border-radius: 4px; font-weight: 600; }
-        .qual-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .qual-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .qual-card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
         .qual-card:hover { transform: translateY(-5px); }
         .qual-card h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.3rem; }
@@ -61,6 +59,8 @@
         .resource-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
         .resource-card img { width: 100%; height: auto; display: block; }
         .resource-card h4 { padding: 20px; color: var(--primary); }
+        .awards { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        .award { background: white; padding: 25px; border-radius: 12px; text-align: center; max-width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
         .contact { background: var(--primary); color: white; }
         .contact h2 { color: white; }
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -68,9 +68,8 @@
         footer { background: var(--dark); color: white; text-align: center; padding: 30px 0; }
         @media (max-width: 768px) {
             .about-grid, .contact-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2.5rem; }
+            .hero h1 { font-size: 2.8rem; }
             nav ul { display: none; }
-            .btn-outline { margin-left: 0; margin-top: 15px; display: block; }
         }
     </style>
 </head>
@@ -91,13 +90,13 @@
     </header>
 
     <section class="hero">
-        <div class="container hero-content">
+        <div class="container">
             <h1>Euan Mutch</h1>
             <div class="tagline">Reset • Rebuild • Rise</div>
-            <p>CIMSPA Personal Trainer Practitioner | FitPro Professional Member | Founder of New Mindset New Power<br>
-            Specialising in Recovery Through Fitness, Menopause Support, Mental Health & Community Coaching</p>
+            <p>Award-Winning Personal Trainer | CIMSPA Practitioner | FitPro Professional Member<br>
+            Founder of New Mindset New Power • Specialising in Recovery Through Fitness, Menopause Support & Community Coaching</p>
             <a href="#contact" class="btn">Book a Session</a>
-            <a href="https://linktr.ee/euanmutchnmnp" class="btn btn-outline" target="_blank">Linktree</a>
+            <a href="https://linktr.ee/euanmutchnmnp" class="btn btn-outline" target="_blank">All Links</a>
         </div>
     </section>
 
@@ -123,7 +122,27 @@
         </div>
     </section>
 
-    <section id="qualifications" style="background: #f0f4f8;">
+    <section id="awards" style="background: #f0f4f8;">
+        <div class="container">
+            <h2>Awards & Recognition</h2>
+            <div class="awards">
+                <div class="award">
+                    <h3>Male Personal Trainer of the Year</h3>
+                    <p>British Fitness Awards 2026</p>
+                </div>
+                <div class="award">
+                    <h3>Mental Health Advocate & Upcoming Brand</h3>
+                    <p>Heart & Soul Awards 2026</p>
+                </div>
+                <div class="award">
+                    <h3>Featured in FitPro Magazine & Blog</h3>
+                    <p>Recovery through fitness & menopause community building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualifications">
         <div class="container">
             <h2>Qualifications & CPD</h2>
             <p class="subtitle">Fully qualified, insured, and committed to ongoing professional development</p>
@@ -132,44 +151,38 @@
                     <h4>Level 3 Diploma Practitioner in Personal Training (RQF)</h4>
                     <div class="date">Focus Awards • PureGym Personal Training Academy • July 2025</div>
                     <p>Core qualification covering anatomy, nutrition, programme design, delivery, and business skills. Certificate Number: RQF109062</p>
-                    <a href="images/116236_PG525_Euan_Mutch.pdf" target="_blank">View Certificate →</a>
                 </div>
                 <div class="qual-card">
                     <h4>Level 3 Diploma in Exercise Referral</h4>
                     <div class="date">The Fitness Group • Certificate of Achievement</div>
                     <p>Specialist training for working with clients referred through medical or health pathways.</p>
-                    <a href="images/2024 The Fitness Group Certificate Euan Mutch.pdf" target="_blank">View Certificate →</a>
                 </div>
                 <div class="qual-card">
                     <h4>Drug and Alcohol Recovery Fitness Specialist</h4>
                     <div class="date">FitPro • 16 October 2025 • 6 CIMSPA CPD Points</div>
                     <p>Specialist training combining lived experience with professional practice to support people in recovery through movement.</p>
-                    <a href="images/23951.pdf" target="_blank">View Certificate →</a>
                 </div>
                 <div class="qual-card">
                     <h4>Older Adults & Exercise</h4>
                     <div class="date">FitPro • 22 April 2026 • 3 CIMSPA CPD Points (Endorsed)</div>
                     <p>Evidence-based approaches for safe, effective training with older adults.</p>
-                    <a href="images/Certificate.pdf" target="_blank">View Certificate →</a>
                 </div>
                 <div class="qual-card">
                     <h4>Exercise, Brain Health and Cognition</h4>
                     <div class="date">FitPro • 03 February 2026 • 2 CIMSPA CPD Points</div>
                     <p>Understanding the powerful links between movement, mental health, and cognitive function.</p>
-                    <a href="images/24380.pdf" target="_blank">View Certificate →</a>
                 </div>
                 <div class="qual-card">
                     <h4>Instructor Public & Teacher Liability Insurance</h4>
                     <div class="date">FitPro / Aviva • Aug 2025 – Aug 2026</div>
                     <p>£2,000,000 cover for Fitness Instructor activities. Fully insured to deliver 1-1 and group sessions.</p>
-                    <a href="images/FP44392861-I-012-20250807161516.pdf" target="_blank">View Policy Schedule →</a>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 30px; color: var(--muted);">Additional training includes Mental Health Awareness, Life Coaching, Peri/Post-Menopause Exercise & Nutrition, and more.</p>
+            <p style="text-align: center; margin-top: 30px; color: var(--muted);">Additional training includes Mental Health Awareness, Life Coaching, Peri/Post-Menopause Exercise & Nutrition, ViPR, and more.</p>
         </div>
     </section>
 
-    <section id="services">
+    <section id="services" style="background: #f0f4f8;">
         <div class="container">
             <h2>How I Can Help</h2>
             <p class="subtitle">Personalised coaching that combines physical training with mindset and community support</p>
@@ -208,18 +221,18 @@
         </div>
     </section>
 
-    <section id="resources" style="background: #f0f4f8;">
+    <section id="resources">
         <div class="container">
             <h2>Client Education Resources</h2>
-            <p class="subtitle">Practical guides to support your journey (Precision Nutrition content)</p>
+            <p class="subtitle">Practical guides to support your journey (Precision Nutrition style)</p>
             <div class="resources">
                 <div class="resource-card">
-                    <img src="images/why-its-so-easy-to-overeat-junk-food-poster.png" alt="Why it's so easy to overeat junk food">
                     <h4>Why It’s So Easy to Overeat Junk Food — and 7 Ways to Stop</h4>
+                    <p style="padding: 0 20px 20px;">Download the full infographic from the portfolio package or view on Precision Nutrition.</p>
                 </div>
                 <div class="resource-card">
-                    <img src="images/how-to-stay-in-shape-when-you’re-busy-infographic-poster.png" alt="How to stay in shape when you're busy">
                     <h4>How to Stay in Shape When You’re Busy — 10-Minute Workouts</h4>
+                    <p style="padding: 0 20px 20px;">Minimal equipment, maximum results for busy lives.</p>
                 </div>
             </div>
         </div>
@@ -236,7 +249,7 @@
                     <p><strong>Phone / WhatsApp:</strong> <a href="tel:07543736315">07543 736315</a></p>
                     <p><strong>Book Sessions:</strong> <a href="https://mutchfitness.mypthub.net" target="_blank">mutchfitness.mypthub.net</a></p>
                     <p><strong>Linktree:</strong> <a href="https://linktr.ee/euanmutchnmnp" target="_blank">linktr.ee/euanmutchnmnp</a></p>
-                    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/euanmutchnmnp" target="_blank">@euanmutchnmnp</a> / @mutcheuan</p>
+                    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/euanmutchnmnp" target="_blank">@euanmutchnmnp</a></p>
                 </div>
                 <div>
                     <h3>Also Available At</h3>
